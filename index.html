@@ -4,30 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>RIMAN referral</title>
-  <meta name="description" content="RIMAN referral — copy the referrer code and open the official sign-up link. Works in the US, Singapore, Hong Kong, Japan, Malaysia, Philippines, Taiwan, UK, Canada, and Mexico." />
+  <meta name="description" content="RIMAN referral — copy the referrer code for sign-up. Works in the US, Singapore, Hong Kong, Japan, Malaysia, Philippines, Taiwan, UK, Canada, and Mexico." />
   <meta name="robots" content="index,follow" />
 
   <!-- Verification (requested default) -->
   <meta name="google-site-verification" content="BtBII3918J1J9BnNiNfjVaPn0QXfIj5xoi1G_8qtFk4" />
   <meta name="naver-site-verification" content="f28f86b7853e4f6704297b86d7def790b41e00e4" />
 
-  <!-- Optional: set your real URL after deployment -->
-  <link rel="canonical" href="https://YOUR-DOMAIN-OR-VERCEL-URL/" />
+  <link rel="canonical" href="https://riman-referral-page.vercel.app/" />
 
   <meta property="og:title" content="RIMAN referral" />
-  <meta property="og:description" content="Copy the referrer code and open the official sign-up link." />
+  <meta property="og:description" content="Copy the referrer code for sign-up." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://riman-referral-page.vercel.app/" />
 
   <style>
     :root{
       --bg1:#0b1f17;
       --bg2:#0f2a1f;
       --card: rgba(255,255,255,0.06);
-      --card2: rgba(255,255,255,0.08);
       --text:#eaf7f1;
       --muted: rgba(234,247,241,0.75);
       --accent:#36d18a;
-      --accent2:#1fbf77;
       --border: rgba(255,255,255,0.14);
       --shadow: 0 18px 55px rgba(0,0,0,0.35);
       --radius: 18px;
@@ -47,9 +45,7 @@
       justify-content:center;
       padding:28px 16px;
     }
-    .wrap{
-      width:min(860px, 100%);
-    }
+    .wrap{ width:min(860px, 100%); }
     .card{
       background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.03));
       border:1px solid var(--border);
@@ -58,10 +54,7 @@
       padding: 26px 22px;
       backdrop-filter: blur(10px);
     }
-    header{
-      text-align:center;
-      padding: 10px 6px 14px;
-    }
+    header{ text-align:center; padding: 10px 6px 14px; }
     h1{
       font-size: clamp(30px, 4vw, 44px);
       margin: 0 0 8px;
@@ -90,12 +83,7 @@
       font-size: 13px;
       white-space: nowrap;
     }
-
-    .grid{
-      display:grid;
-      gap: 14px;
-      margin-top: 18px;
-    }
+    .grid{ display:grid; gap: 14px; margin-top: 18px; }
     .row{
       display:grid;
       grid-template-columns: 1fr auto;
@@ -106,22 +94,12 @@
       border-radius: 14px;
       padding: 14px 14px;
     }
-    .label{
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
+    .label{ font-size: 13px; color: var(--muted); margin-bottom: 6px; }
     .value{
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: 0.02em;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
       word-break: break-all;
-    }
-    .value.small{
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      color: rgba(234,247,241,0.92);
     }
     .btn{
       border: 1px solid rgba(54,209,138,0.55);
@@ -136,11 +114,6 @@
     }
     .btn:hover{ transform: translateY(-1px); border-color: rgba(54,209,138,0.85); }
     .btn:active{ transform: translateY(0px); }
-    .btn.secondary{
-      border-color: rgba(255,255,255,0.18);
-      background: rgba(255,255,255,0.06);
-      min-width: 132px;
-    }
     .note{
       margin-top: 16px;
       padding: 12px 14px;
@@ -159,8 +132,7 @@
       font-size: 12px;
       line-height: 1.5;
     }
-    a{ color: var(--accent); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
+    code{ color: rgba(234,247,241,0.9); }
     .toast{
       position: fixed;
       left: 50%;
@@ -193,8 +165,7 @@
       <header>
         <h1>RIMAN referral</h1>
         <p class="subtitle">
-          Copy the referrer code, then open the official sign-up link.
-          This page is intended for search discovery for the keyword <strong>“RIMAN referral”</strong>.
+          Copy the referrer code below. This page targets the keyword <strong>“RIMAN referral”</strong> for search discovery.
         </p>
 
         <div class="pillrow" aria-label="Supported countries">
@@ -220,14 +191,6 @@
           <button class="btn" id="copyBtn" type="button">Copy</button>
         </section>
 
-        <section class="row" aria-label="Sign-up link">
-          <div>
-            <div class="label">RIMAN invite link</div>
-            <div class="value small" id="inviteLink">https://kr.riman.com/signup/selectType?referrerCode=1021859591</div>
-          </div>
-          <button class="btn secondary" id="openBtn" type="button">Open</button>
-        </section>
-
         <div class="note">
           <strong>Works for:</strong> US, Singapore, Hong Kong, Japan, Malaysia, Philippines, Taiwan, UK, Canada, and Mexico.
           <br />
@@ -238,7 +201,7 @@
       <footer>
         <div>© <span id="year"></span> RIMAN referral (Unofficial helper page)</div>
         <div style="margin-top:6px;">
-          After deploying, update the <code>canonical</code> URL in <code>index.html</code> to your actual domain/Vercel URL.
+          Canonical: <code>https://riman-referral-page.vercel.app/</code>
         </div>
       </footer>
     </div>
@@ -248,7 +211,6 @@
 
   <script>
     const refCodeEl = document.getElementById('refCode');
-    const inviteLinkEl = document.getElementById('inviteLink');
     const toast = document.getElementById('toast');
 
     function showToast(msg){
@@ -264,7 +226,6 @@
         await navigator.clipboard.writeText(text);
         showToast('Referrer code copied!');
       }catch(e){
-        // Fallback
         const t = document.createElement('textarea');
         t.value = text;
         document.body.appendChild(t);
@@ -273,11 +234,6 @@
         document.body.removeChild(t);
         showToast('Referrer code copied!');
       }
-    });
-
-    document.getElementById('openBtn').addEventListener('click', () => {
-      const url = inviteLinkEl.textContent.trim();
-      window.open(url, '_blank', 'noopener,noreferrer');
     });
 
     document.getElementById('year').textContent = new Date().getFullYear();

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-DOMAIN-OR-VERCEL-URL/sitemap.xml
+Sitemap: https://riman-referral-page.vercel.app/sitemap.xml

@@ -1,22 +1,16 @@
-# RIMAN referral (SEO landing)
+# RIMAN referral (Code-only SEO landing)
 
 This is a simple centered landing page targeting the keyword **"RIMAN referral"**.
+It shares only the **referrer code** (no invite link).
 
-## Quick deploy (Vercel)
-1. Create a new GitHub repo and upload these files.
-2. Import the repo into Vercel.
-3. Deploy.
+## Deployed URL
+- https://riman-referral-page.vercel.app/
 
-## Important edits after deploy
-- In `index.html`, replace:
-  - `https://YOUR-DOMAIN-OR-VERCEL-URL/` (canonical)
-- In `robots.txt` and `sitemap.xml`, replace:
-  - `https://YOUR-DOMAIN-OR-VERCEL-URL`
-
-Then submit your sitemap in Google Search Console:
-- `https://YOUR-DOMAIN-OR-VERCEL-URL/sitemap.xml`
-
-## Contents
-- `index.html` (page)
+## Files
+- `index.html`
 - `robots.txt`
 - `sitemap.xml`
+
+## Notes
+Submit your sitemap in Google Search Console:
+- https://riman-referral-page.vercel.app/sitemap.xml
