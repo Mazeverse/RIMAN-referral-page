@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RIMAN referral</title>
+  <meta name="description" content="RIMAN referral — copy the referrer code and open the official sign-up link. Works in the US, Singapore, Hong Kong, Japan, Malaysia, Philippines, Taiwan, UK, Canada, and Mexico." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Verification (requested default) -->
+  <meta name="google-site-verification" content="BtBII3918J1J9BnNiNfjVaPn0QXfIj5xoi1G_8qtFk4" />
+  <meta name="naver-site-verification" content="f28f86b7853e4f6704297b86d7def790b41e00e4" />
+
+  <!-- Optional: set your real URL after deployment -->
+  <link rel="canonical" href="https://YOUR-DOMAIN-OR-VERCEL-URL/" />
+
+  <meta property="og:title" content="RIMAN referral" />
+  <meta property="og:description" content="Copy the referrer code and open the official sign-up link." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg1:#0b1f17;
+      --bg2:#0f2a1f;
+      --card: rgba(255,255,255,0.06);
+      --card2: rgba(255,255,255,0.08);
+      --text:#eaf7f1;
+      --muted: rgba(234,247,241,0.75);
+      --accent:#36d18a;
+      --accent2:#1fbf77;
+      --border: rgba(255,255,255,0.14);
+      --shadow: 0 18px 55px rgba(0,0,0,0.35);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 20% 15%, rgba(54,209,138,0.22), transparent 55%),
+        radial-gradient(900px 700px at 85% 20%, rgba(31,191,119,0.18), transparent 60%),
+        linear-gradient(160deg, var(--bg1), var(--bg2));
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px 16px;
+    }
+    .wrap{
+      width:min(860px, 100%);
+    }
+    .card{
+      background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.03));
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 26px 22px;
+      backdrop-filter: blur(10px);
+    }
+    header{
+      text-align:center;
+      padding: 10px 6px 14px;
+    }
+    h1{
+      font-size: clamp(30px, 4vw, 44px);
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .subtitle{
+      margin:0 auto;
+      max-width: 62ch;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 15px;
+    }
+    .pillrow{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content:center;
+      margin-top: 14px;
+    }
+    .pill{
+      border:1px solid rgba(54,209,138,0.45);
+      background: rgba(54,209,138,0.10);
+      color: var(--text);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .grid{
+      display:grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .row{
+      display:grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items:center;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 14px 14px;
+    }
+    .label{
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .value{
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      word-break: break-all;
+    }
+    .value.small{
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: rgba(234,247,241,0.92);
+    }
+    .btn{
+      border: 1px solid rgba(54,209,138,0.55);
+      background: linear-gradient(180deg, rgba(54,209,138,0.18), rgba(54,209,138,0.10));
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 700;
+      cursor:pointer;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      min-width: 116px;
+    }
+    .btn:hover{ transform: translateY(-1px); border-color: rgba(54,209,138,0.85); }
+    .btn:active{ transform: translateY(0px); }
+    .btn.secondary{
+      border-color: rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.06);
+      min-width: 132px;
+    }
+    .note{
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(0,0,0,0.18);
+      color: rgba(234,247,241,0.85);
+      line-height: 1.5;
+      font-size: 13px;
+      text-align:center;
+    }
+    footer{
+      margin-top: 14px;
+      text-align:center;
+      color: rgba(234,247,241,0.65);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    a{ color: var(--accent); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    .toast{
+      position: fixed;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.70);
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: 10px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .18s ease, transform .18s ease;
+    }
+    .toast.show{
+      opacity: 1;
+      transform: translateX(-50%) translateY(-2px);
+    }
+    @media (min-width: 720px){
+      .grid{ gap: 16px; }
+      .card{ padding: 30px 30px; }
+      .row{ padding: 16px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <h1>RIMAN referral</h1>
+        <p class="subtitle">
+          Copy the referrer code, then open the official sign-up link.
+          This page is intended for search discovery for the keyword <strong>“RIMAN referral”</strong>.
+        </p>
+
+        <div class="pillrow" aria-label="Supported countries">
+          <span class="pill">United States</span>
+          <span class="pill">Singapore</span>
+          <span class="pill">Hong Kong</span>
+          <span class="pill">Japan</span>
+          <span class="pill">Malaysia</span>
+          <span class="pill">Philippines</span>
+          <span class="pill">Taiwan</span>
+          <span class="pill">United Kingdom</span>
+          <span class="pill">Canada</span>
+          <span class="pill">Mexico</span>
+        </div>
+      </header>
+
+      <main class="grid" role="main">
+        <section class="row" aria-label="Referrer code">
+          <div>
+            <div class="label">Referrer code</div>
+            <div class="value" id="refCode">1046157906</div>
+          </div>
+          <button class="btn" id="copyBtn" type="button">Copy</button>
+        </section>
+
+        <section class="row" aria-label="Sign-up link">
+          <div>
+            <div class="label">RIMAN invite link</div>
+            <div class="value small" id="inviteLink">https://kr.riman.com/signup/selectType?referrerCode=1021859591</div>
+          </div>
+          <button class="btn secondary" id="openBtn" type="button">Open</button>
+        </section>
+
+        <div class="note">
+          <strong>Works for:</strong> US, Singapore, Hong Kong, Japan, Malaysia, Philippines, Taiwan, UK, Canada, and Mexico.
+          <br />
+          Tip: paste the referrer code during sign-up if prompted.
+        </div>
+      </main>
+
+      <footer>
+        <div>© <span id="year"></span> RIMAN referral (Unofficial helper page)</div>
+        <div style="margin-top:6px;">
+          After deploying, update the <code>canonical</code> URL in <code>index.html</code> to your actual domain/Vercel URL.
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Copied!</div>
+
+  <script>
+    const refCodeEl = document.getElementById('refCode');
+    const inviteLinkEl = document.getElementById('inviteLink');
+    const toast = document.getElementById('toast');
+
+    function showToast(msg){
+      toast.textContent = msg;
+      toast.classList.add('show');
+      window.clearTimeout(window.__toastTimer);
+      window.__toastTimer = window.setTimeout(() => toast.classList.remove('show'), 1200);
+    }
+
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      const text = refCodeEl.textContent.trim();
+      try{
+        await navigator.clipboard.writeText(text);
+        showToast('Referrer code copied!');
+      }catch(e){
+        // Fallback
+        const t = document.createElement('textarea');
+        t.value = text;
+        document.body.appendChild(t);
+        t.select();
+        document.execCommand('copy');
+        document.body.removeChild(t);
+        showToast('Referrer code copied!');
+      }
+    });
+
+    document.getElementById('openBtn').addEventListener('click', () => {
+      const url = inviteLinkEl.textContent.trim();
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
